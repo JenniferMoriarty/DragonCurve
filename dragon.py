@@ -4,7 +4,7 @@ import math
 import cmath
 
 pygame.init()  #sets up pygame
-pygame.display.set_caption("mandelbrot")  # sets the window title
+pygame.display.set_caption("dragon")  # sets the window title
 screen = pygame.display.set_mode((800, 800))  # creates game screen
 screen.fill((0,0,0)) #wipe screen black
 
@@ -43,28 +43,16 @@ def DrawDragonLine(level, direction, x1, y1, dx, dy):
 print("hello")
 
 
-
-#these two variables hold the x and y positions of the square
-#initalize these variables to where you want your square to start
-square_x = 50;
-square_y = 50;
-
 #this controls our game loop
 doexit = False;
 
- 
-#so the game loop is set to act on "ticks" of the timer OR keyboard presses
-#OR the mouse closing the display
 while doexit == False:
-    #print("please enter level:")
-    #level=int(input());
-    level = 100
+
+    level = 10
 
     #mess with these!
     DrawDragonLine(level, 'r', 200,200,500,500);
-    #drawSnow(level,20.0,280.0,280.0,280.0);
-    #drawSnow(level,280.0,280.0,150.0,20.0);
-    #drawSnow(level,150.0,20.0,20.0,280.0);
+
  
     pygame.display.flip()
    
